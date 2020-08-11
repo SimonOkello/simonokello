@@ -1,855 +1,1074 @@
 {% load static %}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    
 <head>
-	<title>Simon </title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <title>Simon </title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Maha Personal cv/resume template for professional and personal website." />
+        <meta name="keywords" content="creative, cv, designer,  online cv, online resume, powerful portfolio, professional, professional resume, responsive, resume, vcard " />
+        <meta name="developer" content="Md. Siful Islam">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                
+        <!-- FAV AND ICONS   -->
+        <link rel="shortcut icon" href="{% static 'assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{% static 'assets/images/apple-icon.png' %}">
+        <link rel="shortcut icon" sizes="72x72" href="{% static 'assets/images/apple-icon-72x72.png' %}">
+        <link rel="shortcut icon" sizes="114x114" href="{% static 'assets/images/apple-icon-114x114.png' %}">
+        
+        <!-- Google Font-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{% static 'assets/icons/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/bootstrap.min.css' %}">
+        <!-- Animate CSS-->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/animate.css' %}">
+        <!-- Owl Carousel CSS-->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/owl.css' %}">
+        <!-- Fancybox-->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/jquery.fancybox.min.css' %}">
+        
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+        
+        <!-- Colors -->
+        <link rel="alternate stylesheet" href="{% static 'assets/css/colors/blue.css' %}" title="blue">
+        <link rel="stylesheet" href="{% static 'assets/css/colors/defauld.css' %}" title="defauld">
+        <link rel="alternate stylesheet" href="{% static 'assets/css/colors/green.css' %}" title="green">
+        <link rel="alternate stylesheet" href="{% static 'assets/css/colors/blue-munsell.css' %}" title="blue-munsell">
+        <link rel="alternate stylesheet" href="{% static 'assets/css/colors/orange.css' %}" title="orange">
+        <link rel="alternate stylesheet" href="{% static 'assets/css/colors/purple.css' %}" title="purple"> 
+        <link rel="alternate stylesheet" href="{% static 'assets/css/colors/slate.css' %}" title="slate">
+        <link rel="alternate stylesheet" href="{% static 'assets/css/colors/yellow.css' %}" title="yellow">
+        
+    </head>
+    <body class="white-vertion black-bg">
+        
+        <!-- Start Loader -->
+        <div class="section-loader">
+            <div class="loader">
+                <div></div>
+                <div></div> 
+            </div>
+        </div>
+        <!-- End Loader -->
+        
+        <!--
+        ===================
+           NAVIGATION
+        ===================
+        -->
+        <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav" id="mh-header">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#mh-home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-skills">Skills</a>
+                                </li>                                
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-experience">Experiences</a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-portfolio">Portfolio</a>
+                                </li>                               
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-blog">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--
+        ===================
+           Home
+        ===================
+        -->
+        <section class="mh-home image-bg home-2-img" id="mh-home">
+            <div class="img-foverlay img-color-overlay">
+                <div class="container">
+                    <div class="row section-separator xs-column-reverse vertical-middle-content home-padding">
+                        <div class="col-sm-6">
+                            <div class="mh-header-info">
+                                <div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                                    <span>Hello I'm</span>
+                                </div>
+                                
+                                <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Simon Okello</h2>
+                                <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Full Stack Developer</h4>
+                                
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:">simonokello93@email.com</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="callto:">+254702440280</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i class="fa fa-map-marker"></i><address>Nairobi, Kenya</address></li>
+                                </ul>
+                                
+                                <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://github.com/SimonOkello" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/simonokello/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                <div class="img-border">
+                                    <img src="{% static 'images/SimonOkello.png' %}" alt=""  class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           ABOUT
+        ===================
+        -->
+        <section class="mh-about" id="mh-about">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                            <img src="{% static 'assets/images/ab-img.png' %}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-inner">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About Me</h2>
+                            <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">From the moment I echoed "Hello World" in the console of my first application, I knew I was hooked into the world of software development. But software development has never been "just a job" for me, it has offered an engaging challenge to continually learn and improve my skills in creating high quality softwares. What started with a simple "Hello World" has become a full-fledged passion that only gets more exciting as the years go by. 
+                            </p>
+                            <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                <ul>
+                                    <li><span>Python</span></li>
+                                    <li><span>Django</span></li>
+                                    <li><span>Html/Css</span></li>
+                                    <li><span>Javascript</span></li>
+                                    <li><span>Postgres</span></li>
+                                    <li><span>AWS (RDS/S3)</span></li>
+                                    <li><span>Heroku</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Downlaod CV <i class="fa fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           SERVICE
+        ===================
+        -->
+        <section class="mh-service">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <h2>What I do</h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <i class="fa fa-bullseye purple-color"></i>
+                            <h3>UI Design</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <i class="fa fa-code iron-color"></i>
+                            <h3>Web Development</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                            <i class="fa fa-object-ungroup sky-color"></i>
+                            <h3>App Development</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+          FEATURE PROJECTS
+        ===================
+        -->
+        <section class="mh-featured-project image-bg featured-img-one">
+            <div class="img-color-overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="section-title col-sm-12">
+                            <h3>Featured Projects</h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="mh-single-project-slide-by-side row">
+                                <!-- Project Items -->
+                                <div class="col-sm-12 mh-featured-item">
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class="mh-featured-project-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                                <img src="{% static 'assets/images/p-2.png' %}" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="mh-featured-project-content">
+                                                <h4 class="project-category wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Web Design</h4>
+                                                <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">Wrap</h2>
+                                                <span class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">Design & Development</span>
+                                                <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">Stamp is a clean and elegant Multipurpose Landing Page Template. 
+                                                It will fit perfectly for Startup, Web App or any type of Web Services.
+                                                It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. 
+                                                All variations are organized separately so you can use / customize the template very easily.</p>
+                                                <a href="#" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">View Details</a>
+                                                <div class="mh-testimonial mh-project-testimonial wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">
+                                                    <blockquote>
+                                    					<q>Excellent Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                    				<blockquote>
+                                    					<q>Creative Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                    				<blockquote>
+                                    					<q>Organize Code - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Project Items -->
+                                <div class="col-sm-12 mh-featured-item">
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class="mh-featured-project-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                                <img src="{% static 'assets/images/p-2.png' %}" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="mh-featured-project-content">
+                                                <h4 class="project-category wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Web Design</h4>
+                                                <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">Wrap</h2>
+                                                <span class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">Design & Development</span>
+                                                <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">Stamp is a clean and elegant Multipurpose Landing Page Template. 
+                                                It will fit perfectly for Startup, Web App or any type of Web Services.
+                                                It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. 
+                                                All variations are organized separately so you can use / customize the template very easily.</p>
+                                                <a href="#" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">View Details</a>
+                                                <div class="mh-testimonial mh-project-testimonial wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">
+                                                    <blockquote>
+                                    					<q>Excellent Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                    				<blockquote>
+                                    					<q>Creative Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                    				<blockquote>
+                                    					<q>Organize Code - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Project Items -->
+                                <div class="col-sm-12 mh-featured-item">
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class="mh-featured-project-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                                <img src="{% static 'assets/images/p-2.png' %}" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="mh-featured-project-content">
+                                                <h4 class="project-category wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Web Design</h4>
+                                                <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">Wrap</h2>
+                                                <span class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">Design & Development</span>
+                                                <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">Stamp is a clean and elegant Multipurpose Landing Page Template. 
+                                                It will fit perfectly for Startup, Web App or any type of Web Services.
+                                                It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. 
+                                                All variations are organized separately so you can use / customize the template very easily.</p>
+                                                <a href="#" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">View Details</a>
+                                                <div class="mh-testimonial mh-project-testimonial wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">
+                                                    <blockquote>
+                                    					<q>Excellent Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                    				<blockquote>
+                                    					<q>Creative Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                    				<blockquote>
+                                    					<q>Organize Code - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
+                                    					<cite>- Shane Kavanagh</cite>
+                                    				</blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End: .row -->
+                </div>
+            </div>
+        </section>  
+        
+        <!--
+        ===================
+           SKILLS
+        ===================
+        -->
+        <section class="mh-skills" id="mh-skills">
+            <div class="home-v-img">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="section-title text-center col-sm-12">
+                            <!--<h2>Skills</h2>-->
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-skills-inner">
+                                <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <h3>Technical Skills</h3>
+                                    <div class="each-skills">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Javascript</div>
+                                                    <div class="percentagem-num">86%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 86%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Java</div>
+                                                    <div class="percentagem-num">46%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 46%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Python</div>
+                                                    <div class="percentagem-num">38%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 38%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">PHP</div>
+                                                    <div class="percentagem-num">17%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 17%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                        
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Python</div>
+                                                    <div class="percentagem-num">38%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 38%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">PHP</div>
+                                                    <div class="percentagem-num">17%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 17%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-professional-skills wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                <h3>Professional Skills</h3>
+                                <ul class="mh-professional-progress">
+                                    <li>
+                                        <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                        <div class="pr-skill-name">Communication</div>
+                                    </li>
+                                    <li>
+                                        <div class="mh-progress mh-progress-circle" data-progress="55"></div> 
+                                        <div class="pr-skill-name">Team Work</div>
+                                    </li>
+                                    <li>
+                                        <div class="mh-progress mh-progress-circle" data-progress="86"></div>
+                                        <div class="pr-skill-name">Project Management</div>
+                                    </li> 
+                                    <li>
+                                        <div class="mh-progress mh-progress-circle" data-progress="60"></div>
+                                        <div class="pr-skill-name">Creativity</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           EXPERIENCES
+        ===================
+        -->
+        <!-- <section class="mh-experince image-bg featured-img-one" id="mh-experience">
+            <div class="img-color-overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-education">
+                                <h3 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Education</h3>
+                                <div class="mh-education-deatils"> -->
+                                    <!-- Education Institutes-->
+                                    <!-- <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                        <h4>Art & Multimedia From <a href="#">Oxford University</a></h4>
+                                        <div class="mh-eduyear">2005-2008</div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a 
+                                        page when looking at its layout. The point of using  Lorem Ipsum </p>
+                                    </div>                                 -->
+                                    <!-- Education Institutes-->
+                                    <!-- <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <h4>Art & Multimedia From <a href="#">Oxford University</a></h4>
+                                        <div class="mh-eduyear">2005-2008</div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a 
+                                        page when looking at its layout. The point of using  Lorem Ipsum </p>
+                                    </div>                                 -->
+                                    <!-- Education Institutes-->
+                                    <!-- <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                        <h4>Art & Multimedia From <a href="#">Oxford University</a></h4>
+                                        <div class="mh-eduyear">2005-2008</div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a 
+                                        page when looking at its layout. The point of using L orem Ipsum </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-sm-12 col-md-6">
+                            <div class="mh-work">
+                                 <h3>Work Experience</h3>
+                                <div class="mh-experience-deatils"> -->
+                                    <!-- Education Institutes-->
+                                    <!-- <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                                        <h4>UI/UX Designer <a href="#">IronSketch</a></h4>
+                                        <div class="mh-eduyear">2005-2008</div>
+                                        <span>Responsibility :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Validate CSS</li>
+                                            <li><i class="fa fa-circle"></i>Project Management</li>
+                                        </ul>
+                                    </div>                                 -->
+                                    <!-- Education Institutes-->
+                                    <!-- <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                        <h4>Art & Multimedia From <a href="#">Oxford University</a></h4>
+                                        <div class="mh-eduyear">2005-2008</div>
+                                        <span>Responsibility :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Validate CSS</li>
+                                            <li><i class="fa fa-circle"></i>Project Management</li>
+                                        </ul>
+                                    </div>                                 -->
+                                    <!-- Education Institutes-->
+                                    <!-- <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                        <h4>Art & Multimedia From <a href="#">Oxford University</a></h4>
+                                        <div class="mh-eduyear">2005-2008</div>
+                                        <span>Responsibility :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Validate CSS</li>
+                                            <li><i class="fa fa-circle"></i>Project Management</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        -->
+        
+        <!--
+        ===================
+           PORTFOLIO
+        ===================
+        -->
+        <section class="mh-portfolio" id="mh-portfolio">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <h3>Recent Portfolio</h3>
+                    </div>
+                    <div class="part col-sm-12">
+                        <div class="portfolio-nav col-sm-12" id="filter-button">
+                            <ul>
+                                <li data-filter="*" class="current wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"> <span>All Categories</span></li>
+                                <li data-filter=".user-interface" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Web Design</span></li>
+                                <li data-filter=".branding" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Branding</span></li>
+                                <li data-filter=".mockup" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Mockups</span></li>
+                                <li data-filter=".ui" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Photography</span></li>
+                            </ul>
+                        </div>
+                        <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="portfolioContainer row">
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g1.jpg' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g2.png' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="{% static 'assets/images/portfolio/g2.png' %}" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g3.png' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="{% static 'assets/images/portfolio/g3.png' %}" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g5.png' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="{% static 'assets/images/portfolio/g5.png' %}" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g4.png' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="{% static 'assets/images/portfolio/g4.png' %}" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g6.png' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="{% static 'assets/images/portfolio/g6.png' %}" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g8.png' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="{% static 'assets/images/portfolio/g8.png' %}" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g9.png' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="{% static 'assets/images/portfolio/g9.png' %}" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                                    <figure>
+                                        <img src="{% static 'assets/images/portfolio/g7.jpg' %}" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="{% static 'assets/images/portfolio/g7.jpg' %}" data-fancybox="gallery"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div> <!-- End: .grid .project-gallery -->
+                        </div> <!-- End: .grid .project-gallery -->
+                    </div> <!-- End: .part -->
+                </div> <!-- End: .row -->
+            </div>
+            <div class="mh-portfolio-modal" id="mh">
+                <div class="container">
+                    <div class="row mh-portfolio-modal-inner">
+                        <div class="col-sm-5">
+                            <h2>Wrap - A campanion plugin</h2>
+                            <p>Wrap is a clean and elegant Multipurpose Landing Page Template. 
+                            It will fit perfectly for Startup, Web App or any type of Web Services.
+                            It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. 
+                            All variations are organized separately so you can use / customize the template very easily.</p>       
+                            
+                            <p>It is a clean and elegant Multipurpose Landing Page Template. 
+                            It will fit perfectly for Startup, Web App or any type of Web Services.
+                            It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. 
+                            All variations are organized separately so you can use / customize the template very easily.</p>      
+                            <div class="mh-about-tag">
+                                <ul>
+                                    <li><span>php</span></li>
+                                    <li><span>html</span></li>
+                                    <li><span>css</span></li>
+                                    <li><span>php</span></li>
+                                    <li><span>wordpress</span></li>
+                                    <li><span>React</span></li>
+                                    <li><span>Javascript</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-fill">Live Demo</a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="mh-portfolio-modal-img">
+                                <img src="{% static 'assets/images/pr-0.jif" alt="" class="img-fluid">
+                                <p>All variations are organized separately so you can use / customize the template very easily.</p>    
+                                <img src="{% static 'assets/images/pr-1.jif" alt="" class="img-fluid">
+                                <p>All variations are organized separately so you can use / customize the template very easily.</p>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           QUATES
+        ===================
+        -->
+        <section class="mh-quates image-bg home-2-img">
+            <div class="img-color-overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="each-quates col-sm-12 col-md-6">
+                            <h3 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Have a project on your mind?</h3>
+                            <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Let's capture your idea and turn it into a real product.</p>
+                            <a href="#mh-contact" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+        <!--
+        ===================
+           BLOG
+        ===================
+        -->
+        <section class="mh-blog image-bg featured-img-two" id="mh-blog">
+            <div class="img-color-overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <h3>Featured Posts</h3>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                             <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                <img src="{% static 'assets/images/b-3.png' %}" alt="" class="img-fluid">
+                                <div class="blog-inner">
+                                    <h2><a href="blog-single.html">A life without the daily traffic jams</a></h2>
+                                    <div class="mh-blog-post-info">
+                                        <ul>
+                                            <li><strong>Post On</strong><a href="#">24.11.19</a></li>
+                                            <li><strong>By</strong><a href="#">ThemeSpiders</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                                    <a href="blog-single.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                <img src="{% static 'assets/images/b-2.png' %}" alt="" class="img-fluid">
+                                <div class="blog-inner">
+                                    <h2><a href="blog-single.html">Proportion are what’s really needed</a></h2>
+                                    <div class="mh-blog-post-info">
+                                        <ul>
+                                            <li><strong>Post On</strong><a href="#">24.11.19</a></li>
+                                            <li><strong>By</strong><a href="#">ThemeSpiders</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                                    <a href="blog-single.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                <img src="{% static 'assets/images/b-1.png' %}" alt="" class="img-fluid">
+                                <div class="blog-inner">
+                                    <h2><a href="blog-single.html">Mounts of paper work to remember the way</a></h2>
+                                    <div class="mh-blog-post-info">
+                                        <ul>
+                                            <li><strong>Post On</strong><a href="#">24.11.19</a></li>
+                                            <li><strong>By</strong><a href="#">ThemeSpiders</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                                    <a href="blog-single.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <!--
+        ===================
+           Testimonial
+        ===================
+        -->
+        <!-- <section class="mh-testimonial" id="mh-testimonial">
+            <div class="home-v-img">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <h3>Client Reviews</h3>
+                        </div>
+                        <div class="col-sm-12 wow fadeInUp" id="mh-client-review" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="{% static 'assets/images/c-1.png' %}" alt="" class="img-fluid">
+                                    <p>Absolute wonderful ! I am completely
+                                    blown away.The very best.I was amazed
+                                    at the quality</p>
+                                    <h4>John Mike</h4>
+                                    <span>CEO, Author.Inc</span>
+                                </div>
+                            </div>
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="{% static 'assets/images/c-1.png' %}" alt="" class="img-fluid">
+                                    <p>Absolute wonderful ! I am completely
+                                    blown away.The very best.I was amazed
+                                    at the quality</p>
+                                    <h4>John Mike</h4>
+                                    <span>CEO, Author.Inc</span>
+                                </div>
+                            </div>                    
+                            
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="{% static 'assets/images/c-1.png' %}" alt="" class="img-fluid">
+                                    <p>Absolute wonderful ! I am completely
+                                    blown away.The very best.I was amazed
+                                    at the quality</p>
+                                    <h4>John Mike</h4>
+                                    <span>CEO, Author.Inc</span>
+                                </div>
+                            </div>
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="{% static 'assets/images/c-1.png' %}" alt="" class="img-fluid">
+                                    <p>Absolute wonderful ! I am completely
+                                    blown away.The very best.I was amazed
+                                    at the quality</p>
+                                    <h4>John Mike</h4>
+                                    <span>CEO, Author.Inc</span>
+                                </div>
+                            </div>
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="{% static 'assets/images/c-1.png' %}" alt="" class="img-fluid">
+                                    <p>Absolute wonderful ! I am completely
+                                    blown away.The very best.I was amazed
+                                    at the quality</p>
+                                    <h4>John Mike</h4>
+                                    <span>CEO, Author.Inc</span>
+                                </div>
+                            </div>                    
+                            
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="{% static 'assets/images/c-1.png' %}" alt="" class="img-fluid">
+                                    <p>Absolute wonderful ! I am completely
+                                    blown away.The very best.I was amazed
+                                    at the quality</p>
+                                    <h4>John Mike</h4>
+                                    <span>CEO, Author.Inc</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!--
+        ===================
+           FOOTER 3
+        ===================
+        -->
+        <footer class="mh-footer mh-footer-3" id="mh-contact">
+            <div class="container-fluid">
+                <div class="row section-separator">
+                    <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <h3>Contact Me</h3>
+                    </div>
+                    <div class="map-image image-bg col-sm-12">
+                        <div class="container mt-30">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 mh-footer-address">
+                                    <div class="col-sm-12 xs-no-padding">
+                                        <div class="mh-address-footer-item dark-bg shadow-1 media wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                            <div class="each-icon">
+                                                <i class="fa fa-location-arrow"></i>
+                                            </div>
+                                            <div class="each-info media-body">
+                                                <h4>Address</h4>
+                                                <address>
+                                                    Nairobi, Kenya  
+                                                     
+                                                </address>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 xs-no-padding">
+                                        <div class="mh-address-footer-item media dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                                            <div class="each-icon">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </div>
+                                            <div class="each-info media-body">
+                                                <h4>Email</h4>
+                                                <a href="mailto:simonokello93@gmail.com">simonokello93@gmail.com</a><br>
+                                                <a href="mailto:simonokello.dev@gmail.com">simonokello.dev@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 xs-no-padding">
+                                        <div class="mh-address-footer-item media dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                            <div class="each-icon">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                            <div class="each-info media-body">
+                                                <h4>Phone</h4>
+                                                <a href="callto:+254702440280">+254702440280</a><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator">
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <input name="name" class="contact-name form-control" id="name" type="text" placeholder="First Name" required>
+                                            </div>
+                
+                                            <div class="col-sm-12">
+                                                <input name="name" class="contact-email form-control" id="L_name" type="text" placeholder="Last Name" required>
+                                            </div>
+                
+                                            <div class="col-sm-12">
+                                                <input name="name" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required>
+                                            </div>
+                
+                                            <div class="col-sm-12">
+                                                <textarea class="contact-message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                                            </div>
+                                            
+                                            <!-- Subject Button -->
+                                            <div class="btn-form col-sm-12">
+                                                <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="text-left text-xs-center">
+                                                <p>&copy;2020 Simon Okello. All rights reserved.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul class="social-icon">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-	
-	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
-	
-	<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	
-	
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="{% url 'index' %}">Simon<span>.</span></a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-					<!-- <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li> -->
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url('images/SimonOkello.png');">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello! This is Simon</span>
-								<h1 class="mb-4 mt-3">Full <span>Stack</span> Developer</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url('images/SimonOkello.png');">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">We Design &amp; Build the Web</span>
-								<h1 class="mb-4 mt-3">Hi, I am <span>Simon</span> This is my favorite work.</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-counter img bg-light" id="section-counter">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 d-flex">
-						<div class="icon d-flex justify-content-center align-items-center">
-							<span class="flaticon-suitcase"></span>
-						</div>
-						<div class="text">
-							<strong class="number" data-number="750">0</strong>
-							<span>Project Complete</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 d-flex">
-						<div class="icon d-flex justify-content-center align-items-center">
-							<span class="flaticon-loyalty"></span>
-						</div>
-						<div class="text">
-							<strong class="number" data-number="568">0</strong>
-							<span>Happy Clients</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 d-flex">
-						<div class="icon d-flex justify-content-center align-items-center">
-							<span class="flaticon-coffee"></span>
-						</div>
-						<div class="text">
-							<strong class="number" data-number="478">0</strong>
-							<span>Cups of coffee</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 d-flex">
-						<div class="icon d-flex justify-content-center align-items-center">
-							<span class="flaticon-calendar"></span>
-						</div>
-						<div class="text">
-							<strong class="number" data-number="780">0</strong>
-							<span>Years experienced</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about-1.jpg);">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
-					<div class="py-md-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								<span class="subheading">My Intro</span>
-								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
-								<p>From the moment I echoed "Hello World" in the console of my first application, I knew I was hooked into the world of software development. But software development has never been "just a job" for me, it has offered an engaging challenge to continually learn and improve my skills in creating high quality softwares. What started with a simple "Hello World" has become a full-fledged passion that only gets more exciting as the years go by.</p>
-
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Name:</span> <span>Simon Dennis Okello</span></li>
-									<li class="d-flex"><span>Address:</span> <span>Nairobi, Kenya</span></li>
-									<li class="d-flex"><span>Email:</span> <span>simonokello93@gmail.com</span></li>
-									<li class="d-flex"><span>Phone: </span> <span>+254702440280</span></li>
-								</ul>
-							</div>
-							<div class="col-md-12">
-								<div class="my-interest d-lg-flex w-100">
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-listening"></span>
-										</div>
-										<div class="text">Music</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-suitcases"></span>
-										</div>
-										<div class="text">Travel</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-video-player"></span>
-										</div>
-										<div class="text">Movie</div>
-									</div>
-									<div class="interest-wrap d-flex align-items-center">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="flaticon-football"></span>
-										</div>
-										<div class="text">Sports</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="ftco-section bg-light" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Skills</span>
-					<h2 class="mb-4">My Skills</h2>
-					<p>Below is the outline of the my skill sets.</p>
-				</div>
-			</div>
-			<div class="row progress-circle mb-5">
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Python</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='70'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Django</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='80'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Html/Css</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='95'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Javascript</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='60'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">60<sup class="small">%</sup></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">AWS (RDS/S3)</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='50'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">50<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-
-					</div>
-				</div>
-
-				<div class="col-lg-4 mb-4">
-					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Postgres</h2>
-
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='80'>
-							<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-							</div>
-						</div>
-						<!-- END -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- <section class="ftco-section" id="services-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
-					<span class="subheading">I am great at</span>
-					<h2 class="mb-4">We do awesome services for our clients</h2>
-					<p>Some of the services we offer our clients.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-3d-design"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-app-development"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Application</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-web-programming"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Web Development</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-branding"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Banner Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-computer"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Branding</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Icon Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">Graphic Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
-						<div class="media-body">
-							<h3 class="heading mb-3">SEO</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
-						</div>
-					</div> 
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section class="ftco-hireme">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-md-8 col-lg-8 d-flex align-items-center">
-					<div class="w-100 py-4">
-						<h2>Have a project on your mind.</h2>
-						<p>Let's capture your idea and turn it into a real product.</p>
-						<p class="mb-0"><a href="#" class="btn btn-white py-3 px-4">Contact me</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 col-lg-4 d-flex align-items-end">
-					<img src="images/author.png" class="img-fluid" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-project" id="projects-section">
-		<div class="container-fluid px-md-4">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Accomplishments</span>
-					<h2 class="mb-4">My Projects</h2>
-					<p>Checkout some of the projects I have developed.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-7.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-8.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- <section class="ftco-section testimony-section bg-primary">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
-					<span class="subheading">Testimonies</span>
-					<h2 class="mb-4">What client says about?</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row ftco-animate">
-				<div class="col-md-12">
-					<div class="carousel-testimony owl-carousel">
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
+    <!--
+    ==============
+    * JS Files *
+    ==============
+    -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- jQuery -->
+    <script src="{% static 'assets/plugins/js/jquery.min.js' %}"></script>
+    <!-- popper -->
+    <script src="{% static 'assets/plugins/js/popper.min.js' %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static 'assets/plugins/js/bootstrap.min.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'assets/plugins/js/owl.carousel.js' %}"></script>
+    <!-- validator -->
+    <script src="{% static 'assets/plugins/js/validator.min.js' %}"></script>
+    <!-- wow -->
+    <script src="{% static 'assets/plugins/js/wow.min.js' %}"></script>
+    <!-- mixin js-->
+    <script src="{% static 'assets/plugins/js/jquery.mixitup.min.js' %}"></script>
+    <!-- circle progress-->
+    <script src="{% static 'assets/plugins/js/circle-progress.js' %}"></script>
+    <!-- jquery nav -->
+    <script src="{% static 'assets/plugins/js/jquery.nav.js' %}"></script>
+    <!-- Fancybox js-->
+    <script src="{% static 'assets/plugins/js/jquery.fancybox.min.js' %}"></script>
+    <!-- Map api -->
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
+    <!-- isotope js-->
+    <script src="{% static 'assets/plugins/js/isotope.pkgd.js' %}"></script>
+    <script src="{% static 'assets/plugins/js/packery-mode.pkgd.js' %}"></script>
+    <!-- Custom Scripts-->
+    <script src="{% static 'assets/js/map-init.js' %}"></script>
+    <script src="{% static 'assets/js/custom-scripts.js' %}"></script>
 
 
-	<section class="ftco-section bg-light" id="blog-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<span class="subheading">Blog</span>
-					<h2 class="mb-4">Our Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- ****************
+      After neccessary customization/modification, Please minify 
+      JavaScript/jQuery according to http://browserdiet.com/en/ for better performance
+    **************** -->
+    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+    <link rel="stylesheet" href="{% static 'demo/demo.css' %}">
+    <script type="text/javascript" src="{% static 'demo/styleswitcher.js' %}"></script>
+    <script type="text/javascript" src="{% static 'demo/demo.js' %}"></script>
+    <div class="demo-style-switch" id="switch-style">
+        <a id="toggle-switcher" class="switch-button"><i class="fa fa-snowflake-o fa-spin"></i></a>
+        <div class="switched-options">
+            <div class="config-title">
+                Colors
+            </div>
+            <ul class="styles">
+                <li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
+                    <div class="blue"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="Purple">
+                    <div class="purple"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('blue-munsell'); return false;" title="Blue Munsell">
+                    <div class="blue-munsell"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="Orange">
+                    <div class="orange"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('slate'); return false;" title="Slate">
+                    <div class="slate"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="Green">
+                    <div class="green"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="Yellow">
+                    <div class="yellow"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="Red">
+                    <div class="red"></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
 
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<span class="subheading">Contact us</span>
-					<h2 class="mb-4">Have a Project?</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-
-			<div class="row block-9">
-				<div class="col-md-8">
-					<form action="#" class="bg-light p-4 p-md-5 contact-form">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Email">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Subject">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-								</div>
-							</div>
-						</div>
-					</form>
-					
-				</div>
-
-				<div class="col-md-4 d-flex pl-md-5">
-					<div class="row">
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-map-marker"></span>
-							</div>
-							<div class="text">
-								<p><span>Address:</span> Nairobi, Kenya</p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-phone"></span>
-							</div>
-							<div class="text">
-								<p><span>Phone:</span> <a href="tel://1234567920">+254702440280</a></p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-paper-plane"></span>
-							</div>
-							<div class="text">
-								<p><span>Email:</span> <a href="mailto:info@yoursite.com">simonokello93@gmail.com</a></p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-globe"></span>
-							</div>
-							<div class="text">
-								<p><span>Website</span> <a href="#">Resume</a></p>
-							</div>
-						</div>
-					</div>
-					<!-- <div id="map" class="map"></div> -->
-				</div>
-			</div>
-		</div>
-	</section>
-	
-
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Lets talk about</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="#" class="btn btn-primary">Learn more</a></p>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Services</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Business Strategy</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Data Analysis</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Graphic Design</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon fa fa-map marker"></span><span class="text">Nairobi, Kenya</span></li>
-								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+254702440280</span></a></li>
-								<li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">simonokello93@gmail.com</span></a></li>
-							</ul>
-						</div>
-						<ul class="ftco-footer-social list-unstyled mt-2">
-							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		
-
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-		<script src="{% static 'js/jquery.min.js' %}"></script>
-		<script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
-		<script src="{% static 'js/popper.min.js' %}"></script>
-		<script src="{% static 'js/bootstrap.min.js' %}"></script>
-		<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-		<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-		<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
-		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
-		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-		<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
-		<script src="{% static 'js/scrollax.min.js' %}"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="{% static 'js/google-map.js' %}"></script>
-		
-		<script src="{% static 'js/main.js' %}"></script>
-		
-	</body>
-	</html>
+</html>
