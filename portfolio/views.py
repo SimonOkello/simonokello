@@ -6,6 +6,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
+from django.views.decorators.csrf import csrf_exempt
 
 from .forms import PostForm
 from .filters import ProjectFilter
@@ -14,12 +15,26 @@ from .models import Project
 
 # Create your views here.
 
-
+@csrf_exempt
 def index(request):
-    posts = Project.objects.filter(active=True, featured=True)[0:3]
+    if request.method == 'POST':
+        first_name = request.POST['first_name']
+        last_name = request.POST['last_name']
+        email = request.POST['email']
+        message = request.POST['message']
+        
 
-    context = {'posts': posts}
-    return render(request, 'portfolio/index.html', context)
+        email = EmailMessage(
+            request.POST['subject'],
+            template,
+            settings.EMAIL_HOST_USER,
+            ['simonokello.dev@gmail.com']
+        )
+
+        email.fail_silently = False
+        email.send()
+    
+    return render(request, 'portfolio/index.html', {})
 
 
 def projects(request):
@@ -95,24 +110,3 @@ def deleteProject(request, slug):
     return render(request, 'portfolio/delete.html', context)
 
 
-def sendEmail(request):
-
-    if request.method == 'POST':
-
-        template = render_to_string('portfolio/email_template.html', {
-            'name': request.POST['name'],
-            'email': request.POST['email'],
-            'message': request.POST['message'],
-        })
-
-        email = EmailMessage(
-            request.POST['subject'],
-            template,
-            settings.EMAIL_HOST_USER,
-            ['dennisivy11@gmail.com']
-        )
-
-        email.fail_silently = False
-        email.send()
-
-    return render(request, 'portfolio/email_sent.html')

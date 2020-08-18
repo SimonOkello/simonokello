@@ -14,5 +14,4 @@ urlpatterns = [
 	path('delete_project/<slug:slug>/', views.deleteProject, name="delete_project"),
 
 
-	path('send_email/', views.sendEmail, name="send_email"),
 ]

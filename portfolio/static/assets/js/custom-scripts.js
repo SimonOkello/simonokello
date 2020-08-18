@@ -343,13 +343,14 @@
        });
     
         function submitForm(){
-          var name = $("#name").val();
+          var first_name = $("#first_name").val();
+          var last_name = $("#last_name").val();
           var email = $("#email").val();
           var message = $("#message").val();
           $.ajax({
               type: "POST",
-              url: "process.php",
-              data: "name=" + name + "&email=" + email + "&message=" + message,
+              url: " ",
+              data: "first_name=" + first_name + "last_name=" + last_name +  "&email=" + email + "&message=" + message,
               success : function(text){
                   if (text == "success"){
                       formSuccess();
